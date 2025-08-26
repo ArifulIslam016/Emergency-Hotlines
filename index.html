@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Hotline</title>
+    <!-- font awsome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- daisy ui and tailwind link -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
@@ -58,7 +67,7 @@
         <div class="py-[21px]">
           <img
             class="mx-auto w-[92px] h-[92px]"
-            src="./assets/logo.png"
+            src="./assets/logo-dark.png"
             alt=""
           />
           <h1 class="font-bold text-[40px] text-white my-[11px]">
@@ -73,12 +82,169 @@
     </section>
     <!-- main section here services**************** -->
     <main class="flex bg-[#41ff6a2c]">
-      <div class="servicesleft w-9/12">
-        <div class="service">
-          <img src="./assets/emergency.png" alt="" />
+      <div
+        class="servicesleft w-9/12 grid grid-cols-3 gap-[30px] mt-12 pl-[58px]"
+      >
+        <div class="service bg-white rounded-xl">
+          <div class="p-[32px]">
+            <div class="flex justify-between">
+              <img
+                class="w-[60px] h-[60] p-[14px] rounded-2xl bg-[#FFE3E2]"
+                src="./assets/emergency.png"
+                alt=""
+              />
+              <button class="text-2xl">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <h1 class="font-bold text-2xl text-black my-4">
+              National Emergency Number
+            </h1>
+
+            <p class="text-[#5C5C5C] text-lg mb-6">National Emergency</p>
+
+            <h1 class="font-bold text-[32px] text-black">999</h1>
+            <p
+              class="bg-[#F2F2F2] w-fit px-4 py-[6px] text-[#5C5C5C] text-lg rounded-3xl"
+            >
+              All
+            </p>
+            <div class="service-btn mt-6 w-full flex">
+              <button
+                class="btn btn-outline border-gray-300 rounded-lg mr-2 text-[#5C5C5C] text-[16px] w-1/2"
+              >
+                <i class="fa-regular fa-copy"> </i> Copy
+              </button>
+              <button
+                class="btn btn-outline rounded-lg text-[16px] text-white w-1/2 bg-[#00A63E] border-none"
+              >
+                <i class="fa-solid fa-phone"> </i>Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- police service starts form here -->
+        <div class="service bg-white rounded-xl">
+          <div class="p-[32px]">
+            <div class="flex justify-between">
+              <img
+                class="w-[60px] h-[60] p-[14px] rounded-2xl bg-[#FFE3E2]"
+                src="./assets/police.png"
+                alt=""
+              />
+              <button class="text-2xl">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <h1 class="font-bold text-2xl text-black my-4">
+              Police Helpline Number
+            </h1>
+
+            <p class="text-[#5C5C5C] text-lg mb-6">Police</p>
+
+            <h1 class="font-bold text-[32px] text-black">999</h1>
+            <p
+              class="bg-[#F2F2F2] w-fit px-4 py-[6px] text-[#5C5C5C] text-lg rounded-3xl"
+            >
+              Police
+            </p>
+            <div class="service-btn mt-6 w-full flex">
+              <button
+                class="btn btn-outline border-gray-300 rounded-lg mr-2 text-[#5C5C5C] text-[16px] w-1/2"
+              >
+                <i class="fa-regular fa-copy"> </i> Copy
+              </button>
+              <button
+                class="btn btn-outline rounded-lg text-[16px] text-white w-1/2 bg-[#00A63E] border-none"
+              >
+                <i class="fa-solid fa-phone"> </i>Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Fire service section starts form here -->
+        <div class="service bg-white rounded-xl">
+          <div class="p-[32px]">
+            <div class="flex justify-between">
+              <img
+                class="w-[60px] h-[60] p-[14px] rounded-2xl bg-[#FFE3E2]"
+                src="./assets/fire-service.png"
+                alt=""
+              />
+              <button class="text-2xl">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <h1 class="font-bold text-2xl text-black my-4">
+              Fire Service Number
+            </h1>
+
+            <p class="text-[#5C5C5C] text-lg mb-6">Fire Service</p>
+
+            <h1 class="font-bold text-[32px] text-black">999</h1>
+            <p
+              class="bg-[#F2F2F2] w-fit px-4 py-[6px] text-[#5C5C5C] text-lg rounded-3xl"
+            >
+              Fire
+            </p>
+            <div class="service-btn mt-6 w-full flex">
+              <button
+                class="btn btn-outline border-gray-300 rounded-lg mr-2 text-[#5C5C5C] text-[16px] w-1/2"
+              >
+                <i class="fa-regular fa-copy"> </i> Copy
+              </button>
+              <button
+                class="btn btn-outline rounded-lg text-[16px] text-white w-1/2 bg-[#00A63E] border-none"
+              >
+                <i class="fa-solid fa-phone"> </i>Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Ambulance Service section starts from here -->
+        <div class="service bg-white rounded-xl">
+          <div class="p-[32px]">
+            <div class="flex justify-between">
+              <img
+                class="w-[60px] h-[60] p-[14px] rounded-2xl bg-[#FFE3E2]"
+                src="./assets/ambulance.png"
+                alt=""
+              />
+              <button class="text-2xl">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <h1 class="font-bold text-2xl text-black my-4">
+              Ambulance Service
+            </h1>
+
+            <p class="text-[#5C5C5C] text-lg mb-6">Ambulance</p>
+
+            <h1 class="font-bold text-[32px] text-black">999</h1>
+            <p
+              class="bg-[#F2F2F2] w-fit px-4 py-[6px] text-[#5C5C5C] text-lg rounded-3xl"
+            >
+              Health
+            </p>
+            <div class="service-btn mt-6 w-full flex">
+              <button
+                class="btn btn-outline border-gray-300 rounded-lg mr-2 text-[#5C5C5C] text-[16px] w-1/2"
+              >
+                <i class="fa-regular fa-copy"> </i> Copy
+              </button>
+              <button
+                class="btn btn-outline rounded-lg text-[16px] text-white w-1/2 bg-[#00A63E] border-none"
+              >
+                <i class="fa-solid fa-phone"> </i>Call
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="history w-3/12 ml-[30px]"></div>
+
+      <!-- history section starts form here
+         -->
+      <div class="history w-3/12 ml-[30px] mt-12 pr-[58px]">ff</div>
     </main>
   </body>
 </html>
