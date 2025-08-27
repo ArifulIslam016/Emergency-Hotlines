@@ -120,4 +120,7 @@ for (const copyBtn of copyBtns)
     // console.log(hotlinenum);
     navigator.clipboard.writeText(hotlinenum);
     alert("Hotline number copied");
+    let copyCountStore = getNumberValue("copy-counter-store");
+    copyCountStore++;
+    document.getElementById("copy-counter-store").innerText = copyCountStore;
   });
