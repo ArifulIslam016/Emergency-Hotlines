@@ -5,6 +5,9 @@ What is the difference between getElementById, getElementsByClassName, and query
 (b) getElementsByClassName Brings multiple elemenst of sme class name and return html collection.
 (b) querySelector brings frist element of any tags or classes.
 (d) querySelectorAll brings all elemenst of any tags or clasess and retrund nodelist
+
+
+
 **question NO-2
 Too create a new element in the DOM,we used createElement method
 And we used appendChild() or used before for insert based on situation.
