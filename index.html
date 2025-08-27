@@ -83,7 +83,7 @@
     <!-- main section here services**************** -->
     <main class="flex bg-[#41ff6a2c]">
       <div
-        class="servicesleft sm:w-9/12 grid grid-cols-1 sm:grid-cols-3 gap-[30px] mt-12 pl-[58px]"
+        class="servicesleft sm:w-9/12 grid grid-cols-1 sm:grid-cols-3 sm:gap-[30px] mt-12 pl-1 sm:pl-[58px]"
       >
         <div class="service bg-white rounded-xl">
           <div class="p-[32px]">
@@ -111,13 +111,11 @@
             </p>
             <div class="service-btn mt-6 w-full flex">
               <button
-             
                 class="copy-btn btn btn-outline border-gray-300 rounded-lg mr-2 text-[#5C5C5C] text-[16px] w-1/2"
               >
                 <i class="fa-regular fa-copy"> </i> Copy
               </button>
               <button
-              
                 class="call-btn btn btn-outline rounded-lg text-[16px] text-white w-1/2 bg-[#00A63E] border-none"
               >
                 <i class="fa-solid fa-phone"> </i>Call
@@ -152,13 +150,11 @@
             </p>
             <div class="service-btn mt-6 w-full flex">
               <button
-               
                 class="copy-btn btn btn-outline border-gray-300 rounded-lg mr-2 text-[#5C5C5C] text-[16px] w-1/2"
               >
                 <i class="fa-regular fa-copy"> </i> Copy
               </button>
               <button
-               
                 class="call-btn btn btn-outline rounded-lg text-[16px] text-white w-1/2 bg-[#00A63E] border-none"
               >
                 <i class="fa-solid fa-phone"> </i>Call
@@ -193,13 +189,11 @@
             </p>
             <div class="service-btn mt-6 w-full flex">
               <button
-              
                 class="copy-btn btn btn-outline border-gray-300 rounded-lg mr-2 text-[#5C5C5C] text-[16px] w-1/2"
               >
                 <i class="fa-regular fa-copy"> </i> Copy
               </button>
               <button
-               
                 class="call-btn btn btn-outline rounded-lg text-[16px] text-white w-1/2 bg-[#00A63E] border-none"
               >
                 <i class="fa-solid fa-phone"> </i>Call
@@ -234,13 +228,11 @@
             </p>
             <div class="service-btn mt-6 w-full flex">
               <button
-                
                 class="copy-btn btn btn-outline border-gray-300 rounded-lg mr-2 text-[#5C5C5C] text-[16px] w-1/2"
               >
                 <i class="fa-regular fa-copy"> </i> Copy
               </button>
               <button
-               
                 class="call-btn btn btn-outline rounded-lg text-[16px] text-white w-1/2 bg-[#00A63E] border-none"
               >
                 <i class="fa-solid fa-phone"> </i>Call
@@ -275,13 +267,11 @@
             </p>
             <div class="service-btn mt-6 w-full flex">
               <button
-                
                 class="copy-btn btn btn-outline border-gray-300 rounded-lg mr-2 text-[#5C5C5C] text-[16px] w-1/2"
               >
                 <i class="fa-regular fa-copy"> </i> Copy
               </button>
               <button
-               
                 class="call-btn btn btn-outline rounded-lg text-[16px] text-white w-1/2 bg-[#00A63E] border-none"
               >
                 <i class="fa-solid fa-phone"> </i>Call
@@ -316,13 +306,11 @@
             </p>
             <div class="service-btn mt-6 w-full flex">
               <button
-                
-                class=" copy-btn btn btn-outline border-gray-300 rounded-lg mr-2 text-[#5C5C5C] text-[16px] w-1/2"
+                class="copy-btn btn btn-outline border-gray-300 rounded-lg mr-2 text-[#5C5C5C] text-[16px] w-1/2"
               >
                 <i class="fa-regular fa-copy"> </i> Copy
               </button>
               <button
-                
                 class="call-btn btn btn-outline rounded-lg text-[16px] text-white w-1/2 bg-[#00A63E] border-none"
               >
                 <i class="fa-solid fa-phone"> </i>Call
@@ -334,33 +322,27 @@
 
       <!-- history section starts form here
          -->
-      <div class="history w-3/12 ml-[30px] mt-12 pr-[58px]">
+      <div
+        id="history-section"
+        class="bg-white p-6 mr-[58px] history w-1/2 sm:w-3/12 ml-[5px] sm:ml-[30px] mt-12 pr-[58px]"
+      >
         <div>
-          <div class="w-full flex justify-between">
+          <div class="w-full flex flex-col sm:flex-row justify-between">
             <button
-              class="btn btn-outline border-none rounded-lg font-medium text-[#5C5C5C] text-[20px]"
+              class="btn btn-outline text-center mb-4 sm:mt-0 border-none rounded-lg font-medium text-[#5C5C5C] text-[20px]"
             >
               <i class="fa-regular fa-clock"></i>
               <span class="text-[#111111]">Call History</span>
             </button>
             <button
+              id="clear-history"
               class="btn btn-outline rounded-3xl font-semibold text-[16px] text-white bg-[#00A63E] border-none px-[36px] py-[14px]"
             >
               Clear
             </button>
           </div>
         </div>
-        <div id="callhistory" class="flex items-center justify-between">
-          <div class="historyLeft">
-            <h1 class="font-semibold text-lg text-black mt-4">
-              Anti-Corruption Helpline
-            </h1>
-            <h1 class="text-lg text-[#5C5C5C]">106</h1>
-          </div>
-          <div class="historyRight text-lg text-[#5C5C5C]">
-            <p>Time</p>
-          </div>
-        </div>
+        <div id="di"></div>
       </div>
     </main>
     <script src="./index.js"></script>

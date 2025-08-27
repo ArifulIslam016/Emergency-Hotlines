@@ -1,5 +1,24 @@
 // let copyCounter = parseInt(document.getElementById("copy-counter").innerText);
 // console.log(copyCounter);
+// *******-*-
+// history store function
+function storeOnHistory() {
+  const historyData = document.getElementById("history-section");
+  const newdata = document.createElement("div");
+  newdata.innerHTML = `<div id="callhistory" class="flex items-center justify-between">
+          <div class="historyLeft">
+            <h1 class="font-semibold text-lg text-black mt-4">
+              ${name}
+            </h1>
+            <h1 class="text-lg text-[#5C5C5C]">${num}</h1>
+          </div>
+          <div class="historyRight text-lg text-[#5C5C5C]">
+            <p>${new Date().toLocaleTimeString()}</p>
+          </div>
+        </div>
+   `;
+  document.getElementById("di").appendChild(newdata);
+}
 
 function getNumberValue(id) {
   const value = parseInt(document.getElementById(id).innerText);
@@ -37,7 +56,74 @@ for (const callBtn of callBtns) {
     const name = namenumContainer[0].innerText;
     const num = namenumContainer[1].innerText;
     alert("calling... " + name + " : " + num);
+
+    // Coin decrease here
     const newcallCoin = callCoin - 20;
     document.getElementById("call-coin").innerText = newcallCoin;
+    // tryit**********************************************************
+    const historyData = document.getElementById("history-section");
+    const newdata = document.createElement("div");
+    newdata.innerHTML = `<div id="callhistory" class="flex items-center justify-between">
+          <div class="historyLeft">
+            <h1 class="font-semibold text-lg text-black mt-4">
+              ${name}
+            </h1>
+            <h1 class="text-lg text-[#5C5C5C]">${num}</h1>
+          </div>
+          <div class="historyRight text-lg text-[#5C5C5C]">
+            <p>${new Date().toLocaleTimeString()}</p>
+          </div>
+        </div>
+   `;
+    document.getElementById("di").appendChild(newdata);
   });
 }
+// History Clear Button here
+document.getElementById("clear-history").addEventListener("click", function () {
+  document.getElementById("di").innerHTML = "";
+});
+
+// function storeOnHistory() {
+//   const historyData = document.getElementById("history-section");
+//   const newdata = document.createElement("div");
+//   newdata.innerHTML = `<div id="callhistory" class="flex items-center justify-between">
+//           <div class="historyLeft">
+//             <h1 class="font-semibold text-lg text-black mt-4">
+//               ${name}
+//             </h1>
+//             <h1 class="text-lg text-[#5C5C5C]">${num}</h1>
+//           </div>
+//           <div class="historyRight text-lg text-[#5C5C5C]">
+//             <p>${new Date().toLocaleTimeString()}</p>
+//           </div>
+//         </div>
+//    `;
+//   document.getElementById("di").appendChild(newdata);
+// }
+const copyBtns = document.getElementsByClassName("copy-btn");
+
+for (const callBtn of callBtns) 
+  callBtn.addEventListener("click", function (e) {
+   
+    
+    const element = e.target.closest(".call-btn");
+
+    const callBtnParent = element.parentNode.parentNode;
+    // console.log(callBtnParent);
+    namenumContainer = [];
+    const namenumbers = callBtnParent.querySelectorAll("h1");
+    for (const namenumber of namenumbers) {
+      namenumContainer.push(namenumber);
+      //   console.log(namenumber);
+    }
+    
+    const hotlinenum = namenumContainer[1].innerText;
+    navigator.Clipboard.writeText(num)
+
+
+   
+   
+    
+   
+  
+})
