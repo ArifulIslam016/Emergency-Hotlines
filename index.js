@@ -63,7 +63,7 @@ for (const callBtn of callBtns) {
     // tryit**********************************************************
     const historyData = document.getElementById("history-section");
     const newdata = document.createElement("div");
-    newdata.innerHTML = `<div id="callhistory" class="flex items-center justify-between">
+    newdata.innerHTML = `<div id="callhistory" class="flex  flex-col sm:flex-row sm:items-center sm:justify-between bg-[#5c5c5c1c] rounded-lg mt-2 p-1 sm:p-4">
           <div class="historyLeft">
             <h1 class="font-semibold text-lg text-black mt-4">
               ${name}
