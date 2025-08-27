@@ -28,9 +28,9 @@ function getNumberValue(id) {
 const heartbtns = document.getElementsByClassName("heart-btn");
 for (const heartbtn of heartbtns) {
   heartbtn.addEventListener("click", function () {
-    let copyCounter = getNumberValue("copy-counter");
+    let copyCounter = getNumberValue("fav-counter");
     copyCounter++;
-    document.getElementById("copy-counter").innerText = copyCounter;
+    document.getElementById("fav-counter").innerText = copyCounter;
   });
 }
 // Call button functionality
@@ -100,30 +100,24 @@ document.getElementById("clear-history").addEventListener("click", function () {
 //    `;
 //   document.getElementById("di").appendChild(newdata);
 // }
+//  copy btn functoinality here
 const copyBtns = document.getElementsByClassName("copy-btn");
 
-for (const callBtn of callBtns) 
-  callBtn.addEventListener("click", function (e) {
-   
-    
-    const element = e.target.closest(".call-btn");
+for (const copyBtn of copyBtns)
+  copyBtn.addEventListener("click", function (e) {
+    const copyElement = e.target.closest(".copy-btn");
 
-    const callBtnParent = element.parentNode.parentNode;
+    const CopyBtnParent = copyElement.parentNode.parentNode;
     // console.log(callBtnParent);
-    namenumContainer = [];
-    const namenumbers = callBtnParent.querySelectorAll("h1");
-    for (const namenumber of namenumbers) {
-      namenumContainer.push(namenumber);
-      //   console.log(namenumber);
+    nameCopyNumContainer = [];
+    const copyNumbers = CopyBtnParent.querySelectorAll("h1");
+    for (const copynumber of copyNumbers) {
+      nameCopyNumContainer.push(copynumber);
+      // console.log(copynumber);
     }
-    
-    const hotlinenum = namenumContainer[1].innerText;
-    navigator.Clipboard.writeText(num)
 
-
-   
-   
-    
-   
-  
-})
+    const hotlinenum = nameCopyNumContainer[1].innerText;
+    // console.log(hotlinenum);
+    navigator.clipboard.writeText(hotlinenum);
+    alert("Hotline number copied");
+  });
